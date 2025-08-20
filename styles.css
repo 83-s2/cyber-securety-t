@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  color: rgb(9, 45, 78);
+}
+header{
+  background-color: aliceblue;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+
+}
+
+.logo{
+  color: darkcyan;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+
+}
+
+.navigation a {
+  color:darkcyan ;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-left: 30px;
+
+}
+.navigation a:hover {
+  color:blue;
+}
+section{
+  padding: 100px 200px;
+}
+.mon {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(assets/svg/background.svg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(0, 0, 0);
+  background-attachment: fixed;
+}
+.mon h2 {
+  color:darkseagreen;
+  font-size: 2rem;
+  font-weight: 600;
+ 
+}
+.mon h2 span {
+  display: inline-block;
+  margin-top: 10px;
+  color: chocolate;
+  font-size: 3rem;
+  font-weight: 700;
+  
+}
+
+
+.mon h3 {
+  color:rgb(168, 231, 182);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.corss{
+  color: aliceblue;
+  background-color:darkcyan;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  padding: 0.9375em 2.1875em;
+  letter-spacing: 1px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  transition: 0.7s ease;
+
+}
+.corss:hover{
+  background-color:rgb(8, 114, 114) ;
+  transform: scale(1.1);
+}
+.sotieal a {
+  color:rgb(209, 210, 211);
+  font-size: 3rem;
+  padding-right: 30px;
+  transition: 1s ease;
+  display:inline-block;
+
+}
+.sotieal a:hover{
+  color: rgb(65, 134, 238);
+  transform: scale(1.3);
+}
+img{
+  font-size: 2rem;
+}
+.titel{
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 30px;
+  color: rgb(83, 202, 231);
+}
+.contant{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.carts{
+  width: 100%;
+  
+
+  background: url(fdr.png) no-repeat;
+  background-size: cover;
+
+  background-attachment: fixed;
+
+}
+.card{
+  background-color: rgb(34, 59, 80);
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 50%);
+  padding: 30px;
+  border-radius: 10px;
+  margin: 15px;
+  transition: 0.7s ease ;
+
+}
+.card:hover{
+  transform: scale(1.1);
+}
+.info{
+  text-align: center;
+  transition: 0.7s ease;
+  
+}
+.info:hover{
+  color: aqua;
+}
+.as{
+  text-decoration: none;
+  color: rgb(9, 45, 78);
+}
+.info p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.acon{
+    text-align: center;
+  font-size: 3rem;
+  padding: 10px 40px;
+  margin: 10px;
+  justify-content: center;
+}
+.accounts{
+  
+  background-color:rgb(0, 0, 0);
+
+  
+  transition: 0.7s ease;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  header {
+    padding: 10px 40px;
+  }
+  section {
+    padding: 80px 50px;
+  }
+  .contant {
+    flex-direction: row; /* يخلي الترتيب نفسه */
+    justify-content: center;
+  }
+  .card {
+    width: 45%; /* كرتين في كل صف */
+  }
+}
+
+/* 📱 للموبايل (أقل من 768px) */
+@media (max-width: 768px) {
+  /* الهيدر */
+  header {
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  /* الأقسام */
+  section {
+    padding: 60px 20px;
+  }
+
+  /* المحتويات */
+  .contant {
+    flex-direction: column;   /* كل كرت تحت الثاني */
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;              /* الكرت ياخذ عرض الشاشة بالكامل */
+    margin: 10px 0;
+  }
+
+  /* النصوص */
+  .titel {
+    font-size: 2rem; /* نص أصغر شوية للموبايل */
+    text-align: center;
+  }
+
+  .mon h2, 
+  .mon h3 {
+    text-align: center;
+  }
+
+  /* السوشيال ميديا */
+  .sotieal {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+}
+
