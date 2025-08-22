@@ -149,7 +149,7 @@ img{
 
 }
 .card:hover{
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 .info{
   text-align: center;
@@ -181,6 +181,16 @@ img{
   
   transition: 0.7s ease;
   width: 100%;
+}
+.and{
+  background-color: black;
+  margin: 0;
+  width: 100%;
+}
+.and h1{
+  color:aliceblue;
+  font-size: 1em;
+  margin-bottom: 0;
 }
 @media (max-width: 1024px) {
   header {
